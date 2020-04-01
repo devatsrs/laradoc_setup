@@ -1,18 +1,18 @@
-## Laradoc Setup
+# Laradoc Setup
 
 
+### Clone your repo
 
-#clone your repo
 ``` 
 git clone yourrepourl
 ```
 
-#clone laradoc inside your project
+### Clone laradoc inside your project
 ```
 git clone https://github.com/Laradock/laradock.git
 ```
 
-
+### start development env
 ```
 cd /laradoc
 
@@ -28,23 +28,23 @@ sudo docker-compose restart php-fpm
 ```
 
 
-# change php.ini
+### Change php.ini
 /home/dev/php/laradock/php-fpm/php7.2.ini
 
-# change nginx
+### Change nginx
 /home/dev/php/laradock/nginx/nginx.conf
 
-#billd
+### Billd
 ```
 sudo docker-compose up -d --build nginx mysql
 ```
 
-#build without cache
+### Build without cache
 ```
 sudo docker-compose build --no-cache mysql
 ```
 
-#run command within container - within going to bash or container.
+### Run command within container - within going to bash or container.
 ``` 
 sudo docker exec -it laradock_workspace_1 composer update
 
